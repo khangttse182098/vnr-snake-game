@@ -57,7 +57,7 @@ window.onload = function () {
     quizMode = false;
     document.removeEventListener("keydown", quizKeyHandler); // ✅ remove listener
     document.getElementById("quiz-overlay").style.display = "none";
-    document.getElementById("viewport").focus(); // ✅ refocus for keyboard control
+    // document.getElementById("viewport").focus(); // ✅ refocus for keyboard control
 
     if (selected !== correct) {
       gameover = true;
