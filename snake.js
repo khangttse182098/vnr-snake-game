@@ -43,19 +43,23 @@ window.onload = function () {
 
     // Add key handler ONCE
     quizKeyHandler = function (e) {
-      const key = e.keyCode;
-      if (key >= 49 && key <= 52) {
-        checkQuizAnswer(key - 49, quiz.answer);
+      if (!quizMode) return;
+
+      const key = e.key;
+      if (["1", "2", "3", "4"].includes(key)) {
+        // Determine which answer
+        checkQuizAnswer(parseInt(key) - 1, quiz.answer);
       }
     };
-
-    document.addEventListener("keydown", quizKeyHandler);
+    // Attach globally once
+    window.addEventListener("keydown", quizKeyHandler);
+    // document.addEventListener("keydown", quizKeyHandler);
     document.getElementById("quiz-overlay").style.display = "block";
   }
 
   function checkQuizAnswer(selected, correct) {
     quizMode = false;
-    document.removeEventListener("keydown", quizKeyHandler); // ✅ remove listener
+    window.removeEventListener("keydown", quizKeyHandler);
     document.getElementById("quiz-overlay").style.display = "none";
     // document.getElementById("viewport").focus(); // ✅ refocus for keyboard control
 
