@@ -44,6 +44,7 @@ window.onload = function () {
     // Add key handler ONCE
     quizKeyHandler = function (e) {
       if (!quizMode) return;
+      console.log("lmao");
 
       const key = e.key;
       if (["1", "2", "3", "4"].includes(key)) {
