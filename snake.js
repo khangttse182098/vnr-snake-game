@@ -9,19 +9,224 @@ window.onload = function () {
 
   var quizData = [
     {
-      question: "Trong các dòng sau, dòng nào chỉ bao gồm các câu thành ngữ",
+      question:
+        "Để tránh xung đột quân sự với quân dân miền Bắc Việt Nam, năm 1946, Pháp đã",
       options: [
-        "Lên thác xuống ghềnh; Tấc đất tấc vàng; Tứ cố vô thân.",
-        "Một nắng hai sương; No cơm ấm cật; Sinh cơ lập nghiệp.",
-        "Ngày lành tháng tốt; Nhất thì nhì thục; Tháng bảy kiến bò, chỉ lo lại lụt.",
-        "Bách chiến bách thắng; Tứ cố vô thân; Trăng quầng thì hạn, trăng tán thì mưa.",
+        "ký Hiệp ước Hoa - Pháp với Trung Hoa Dân quốc.",
+        "phát động chiến tranh tâm lý và chiến tranh kinh tế.",
+        "sử dụng lực lượng quân đội Sài Gòn để dọn đường.",
+        "tiêu diệt cơ quan đầu não kháng chiến của Việt Nam.",
+      ],
+      answer: 0,
+    },
+    {
+      question:
+        "Việc giải quyết thành công nạn đói, nạn dốt và khó khăn về tài chính sau Cách mạng tháng Tám năm 1945 ở Việt Nam có ý nghĩa gì?",
+      options: [
+        "Đánh dấu hoàn thành nhiệm vụ đánh đổ chế độ phong kiến.",
+        "Tạo cơ sở để các nước xã hội chủ nghĩa công nhận Việt Nam.",
+        "Tạo cơ sở thực lực để ký Hiệp định Sơ bộ với Pháp.",
+        "Góp phần tạo ra sức mạnh để bảo vệ chế độ mới.",
+      ],
+      answer: 3,
+    },
+    {
+      question:
+        "Những thế lực nào đã đe dọa nền hòa bình ở Việt Nam sau Cách mạng tháng Tám năm 1945?",
+      options: [
+        "Trung Hoa Dân quốc, Pháp, Nhật.",
+        "Trung Hoa Dân quốc, Pháp, Anh, Nhật.",
+        "Trung Hoa Dân quốc, Pháp, Anh, Mỹ.",
+        "Anh, Nhật, Mỹ.",
       ],
       answer: 1,
     },
     {
-      question: "Which is a fruit?",
-      options: ["Apple", "Table", "Car", "Rock"],
+      question:
+        "Sau cách mạng tháng Tám năm 1945, Chính phủ đã phát động phong trào gì để giải quyết khó khăn về tài chính?",
+      options: [
+        `“Nhường cơm sẻ áo”, “Hũ gạo cứu đói”…`,
+        `“Tăng gia sản xuất! Tăng gia sản xuất ngay!”.`,
+        `Xây dựng “Quỹ độc lập”, “Tuần lễ vàng”.`,
+        `Tổ chức “ Ngày đồng tâm”, “Hũ gạo cứu đói”.`,
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "Đảng, Chính phủ và Chủ tịch Hồ Chí Minh thực hiện chủ trương tạm thời hòa hoãn, tránh xung đột với quân Trung Hoa Dân quốc (9/1945 - 3/1946) vì",
+      options: [
+        "muốn tránh trường hợp cùng một lúc phải đối phó với nhiều kẻ thù.",
+        "tập trung lực lượng để cùng một lúc phải giải quyết nhiều khó khăn.",
+        "quân Trung Hoa Dân quốc là kẻ thù nguy hiểm nhất của cách mạng.",
+        `đất nước còn nhiều khó khăn trong tình thế “Ngàn cân treo sợi tóc”.`,
+      ],
       answer: 0,
+    },
+    {
+      question:
+        "Biến một hiệp ước hai bên thành thỏa thuận ba bên có lợi cho cách mạng là ý nghĩa của",
+      options: [
+        "Tạm ước Việt - Pháp (14/9/1946).",
+        "Hiệp định Giơnevơ (21/7/1954).",
+        "Hiệp định Sơ bộ Việt - Pháp (3/6/1946). ",
+        "Hiệp ước Hoa - Pháp (28/2/21946).",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "Thế lực nào sau đây đã dọn đường cho thực dân Pháp quay trở lại xâm lược Việt Nam lần thứ hai (9/1945)?",
+      options: [
+        "Quân đội Anh. ",
+        "Quân đội Trung Hoa Dân quốc.",
+        "Quân đội Nhật.",
+        "Quân đội Mỹ.",
+      ],
+      answer: 0,
+    },
+    {
+      question:
+        "Từ ngày 2/9/1945 đến ngày 6/3/1946, Chính phủ Việt Nam Dân chủ Cộng hòa thực hiện chủ trương nào đối với quân Trung Hoa Dân quốc?",
+      options: [
+        "Hòa hoãn, tránh xung đột.",
+        "Xung đột về quân sự.",
+        "Đối đầu căng thẳng.",
+        "Ký hiệp ước hòa bình.",
+      ],
+      answer: 0,
+    },
+    {
+      question:
+        "Nội dung nào sau đây không phải là thành tựu trên lĩnh vực giáo dục, văn hóa của Việt Nam trong năm đầu sau Cách mạng tháng Tám năm 1945?",
+      options: [
+        "Số lượng người biết đọc, biết viết ngày càng tăng.",
+        "Công tác y tế, vệ sinh phòng bệnh được tăng cường.",
+        "Phong trào Bình dân học vụ kết thúc thắng lợi.",
+        "Báo chí cách mạng được quan tâm, phát triển.",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "Nội dung nào sau đây đúng về tình hình nước Việt Nam Dân chủ Cộng hòa ngay sau Cách mạng tháng Tám năm 1945?",
+      options: [
+        "Quyền lãnh đạo của Đảng chưa được xác lập.",
+        "Lực lượng vũ trang còn non yếu.",
+        "Quyền tự do của nhân dân chưa được xác lập.",
+        "Lực lượng chính trị chưa được hình thành.",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Nội dung nào sau đây không phải là quyết định trong phiên họp đầu tiên (3/1946) của Quốc hội khóa I nước Việt Nam Dân chủ Cộng hòa?",
+      options: [
+        "Xác nhận thành tích của Chính phủ Lâm thời.",
+        "Cho phép lưu hành tiền Việt Nam.",
+        "Thông qua Chính phủ Liên hiệp kháng chiến.",
+        "Lập ra Ban dự thảo Hiến pháp.",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Điểm tương đồng trong chính sách của chính quyền Xô viết Nghệ - Tĩnh (1930 - 1931) và chính quyền Việt Nam Dân chủ Cộng hòa (1945 - 1946) là",
+      options: [
+        "thành lập lực lượng vũ trang và Hội Liên hiệp quốc dân.",
+        "kiên quyết trừng trị những thế lực ra mặt phá hoại.",
+        "cho phát hành tiền giấy Việt Nam trên phạm vi cả nước.",
+        "thành lập Hội đồng Nhân dân và Ủy ban Nhân dân các cấp.",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Cuộc bầu cử Quốc hội khóa I và Hội đồng nhân dân các cấp ở Việt Nam trong những năm 1945 - 1946 có ý nghĩa nào sau đây?",
+      options: [
+        "Góp phần kiện toàn bộ máy chính quyền dân chủ nhân dân.",
+        "Tạo cơ sở để các nước XHCN đặt quan hệ ngoại giao với Việt Nam.",
+        "Đánh dấu sự ra đời của nước Việt Nam Dân chủ Cộng hòa.",
+        "Nâng cao vị thế, uy tín của Việt Nam trên trường quốc tế.",
+      ],
+      answer: 0,
+    },
+    {
+      question:
+        "Việt Nam ký Hiệp định Sơ bộ với Pháp ngày 6/3/1946 với tư cách",
+      options: [
+        "một quốc gia độc lập.",
+        "một nhà nước liên bang.",
+        "một quốc gia tự trị.",
+        "một dân tộc thuộc địa.",
+      ],
+      answer: 0,
+    },
+    {
+      question:
+        "Nội dung nào sau đây không phản ánh hành động của Pháp sau khi kí với Chính phủ Việt Nam Hiệp định Sơ bộ (6/3/1946) và Tạm ước (14/9/1946)?",
+      options: [
+        "Không thi hành các nội dung Hiệp định và Tạm ước.",
+        "Tiếp tục gây xung đột vũ trang ở Nam Bộ.",
+        "Tìm cách phá hoại nội dung Hiệp định và Tạm ước.",
+        "Gửi tối hậu thư đòi ta giải tán lực lượng tự vệ.",
+      ],
+      answer: 3,
+    },
+    {
+      question:
+        "Thuận lợi cơ bản của nước Việt Nam Dân chủ Cộng hòa sau Cách mạng tháng Tám năm 1945 là gì?",
+      options: [
+        "Sự lãnh đạo tài tình của Đảng Cộng sản Đông Dương.",
+        "Việt Nam đã giành được độc lập và xây dựng được chính quyền của riêng mình.",
+        "Sự ủng hộ của quần chúng nhân dân.",
+        "Sự phát triển của phong trào cách mạng thế giới.",
+      ],
+      answer: 3,
+    },
+    {
+      question:
+        "Nhiệm vụ hàng đầu của cách mạng Việt Nam sau khi Cách mạng tháng Tám thành công là gì?",
+      options: [
+        "Đấu tranh chống thù trong giặc ngoài.",
+        "Xây dựng và bảo vệ chính quyền cách mạng.",
+        "Giải quyết tàn dư của chế độ cũ để lại.",
+        "Thực hiện đại đoàn kết dân tộc.",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Thực tế cuộc đấu tranh chống ngoại xâm sau Cách mạng tháng Tám năm 1945 đến trước ngày 19/12/1946 ở Việt Nam cho thấy vai trò của đấu tranh ngoại giao là",
+      options: [
+        "mang tính quyết định.",
+        "hỗ trợ thắng lợi quân sự.",
+        "phụ thuộc vào thắng lợi quân sự.",
+        "độc lập với đấu tranh quân sự.",
+      ],
+      answer: 1,
+    },
+    {
+      question:
+        "Từ cuộc đấu tranh ngoại giao sau Cách mạng tháng Tám 1945 có thể rút ra bài học kinh nghiệm gì cho cuộc đấu tranh bảo vệ chủ quyền Tổ quốc hiện nay?",
+      options: [
+        "Luôn mềm dẻo trong đấu tranh và trong sách lược.",
+        "Cương quyết trong đấu ranh, cứng rắn về sách lược.",
+        "Mềm dẻo về sách lược, cương quyết trong đấu tranh.",
+        "Luôn nhân nhượng với kẻ thù để có môi trường hòa bình.",
+      ],
+      answer: 2,
+    },
+    {
+      question:
+        "Tinh thần yêu chuộng hòa bình của lời kêu gọi toàn quốc kháng chiến được Đảng ta phát huy như thế nào trong cuộc đấu tranh bảo vệ chủ quyền biển đảo hiện nay?",
+      options: [
+        "Chấp nhận đổi một phần chủ quyền biển đảo cho một số lợi ích khác.",
+        "Đấu tranh hòa bình, trên cơ sở tuân thủ luật pháp quốc tế.",
+        "Nhân nhượng với Trung Quốc một số điều khoản.",
+        "Đàm phán, chia sẻ quyền lợi với Trung Quốc.",
+      ],
+      answer: 1,
     },
     // You can add more questions here
   ];
@@ -313,7 +518,7 @@ window.onload = function () {
 
   function newGame() {
     // Initialize the snake
-    snake.init(10, 10, 1, 10, 2);
+    snake.init(10, 10, 1, 7, 2);
 
     // Generate the default level
     level.generate();
