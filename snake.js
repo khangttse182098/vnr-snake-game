@@ -270,6 +270,7 @@ window.onload = function () {
     // document.getElementById("viewport").focus(); // ✅ refocus for keyboard control
 
     if (selected !== correct) {
+      showGameOver();
       gameover = true;
     }
   }
@@ -320,6 +321,18 @@ window.onload = function () {
   var loadcount = 0;
   var loadtotal = 0;
   var preloaded = false;
+
+  function showGameOver() {
+    document.getElementById("game-over-popup").style.display = "flex";
+    sounds.grow.pause();
+    sounds.lose.play();
+
+    document.removeEventListener("keydown", onKeyDown);
+  }
+
+  document.getElementById("restart-btn").addEventListener("click", function () {
+    location.reload(); // reloads the page to restart the game
+  });
 
   // Load images
   function loadImages(imagefiles) {
@@ -636,9 +649,11 @@ window.onload = function () {
       if (nx >= 0 && nx < level.columns && ny >= 0 && ny < level.rows) {
         if (level.tiles[nx][ny] == 1) {
           // Collision with a wall
-          sounds.grow.pause();
-          sounds.lose.play();
+          showGameOver();
           gameover = true;
+
+          document.removeEventListener("keydown", onKeyDown);
+          return;
         }
 
         // Collisions with the snake itself
@@ -648,6 +663,7 @@ window.onload = function () {
 
           if (nx == sx && ny == sy) {
             // Found a snake part
+            showGameOver();
             gameover = true;
             break;
           }
@@ -686,6 +702,7 @@ window.onload = function () {
         }
       } else {
         // Out of bounds
+        showGameOver();
         gameover = true;
       }
 
